@@ -127,7 +127,7 @@ class EggnogErectSong extends Song
     PlayState.instance.currentStage.getBoyfriend().danceEvery = 0;
     PlayState.instance.currentStage.getDad().danceEvery = 0;
 
-    PlayState.instance.tweenCameraToPosition(santaDead.x + 300, santaDead.y, 2.8, FlxEase.expoOut);
+    PlayState.instance.tweenCameraToPosition(santaDead.x + 1200, santaDead.y + 300, 2.8, FlxEase.expoOut);
     // PlayState.instance.tweenCameraToPosition(santaDead.x + 300, santaDead.y, 2.8, FlxEase.expoOut);
     PlayState.instance.tweenCameraZoom(0.73, 2, true, FlxEase.quadInOut);
 
@@ -139,7 +139,7 @@ class EggnogErectSong extends Song
     shootSound.volume = 1;
 
     new FlxTimer().start(2.8, function(tmr) {
-      PlayState.instance.tweenCameraToPosition(santaDead.x + 150, santaDead.y, 9, FlxEase.quartInOut);
+      PlayState.instance.tweenCameraToPosition(santaDead.x + 1050, santaDead.y + 300, 9, FlxEase.quartInOut);
       PlayState.instance.tweenCameraZoom(0.79, 9, true, FlxEase.quadInOut);
     });
 
@@ -155,7 +155,7 @@ class EggnogErectSong extends Song
 
     new FlxTimer().start(12.83, function(tmr) {
       PlayState.instance.camGame.shake(0.005, 0.2);
-      PlayState.instance.tweenCameraToPosition(santaDead.x + 160, santaDead.y + 80, 5, FlxEase.expoOut);
+      PlayState.instance.tweenCameraToPosition(santaDead.x + 1060, santaDead.y + 380, 5, FlxEase.expoOut);
     });
 
     new FlxTimer().start(15, function(tmr) {
