@@ -29,9 +29,10 @@ class GirlfriendCharacter extends SparrowCharacter
     if (!debug && this.characterType == CharacterType.GF)
     {
        var father = PlayState.instance.currentStage.getDad();
+       var girl = PlayState.instance.currentStage.getGirlfriend();
 
-       if (this.characterId == father.characterId)
-           this.shader == father.shader;
+       if (girl.characterId == father.characterId)
+           girl.shader = father.shader;
     }
   }
 
