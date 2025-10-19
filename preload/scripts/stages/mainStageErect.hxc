@@ -80,7 +80,10 @@ class MainStageErectStage extends Stage
       case CharacterType.BF:
         character.shader = colorShaderBf;
       case CharacterType.DAD:
-        character.shader = colorShaderDad;
+        if (getDad.characterId == getGirlfriend.characterId)
+            character.shader = colorShaderGf;
+        else
+            character.shader = colorShaderDad;
       case CharacterType.GF:
         character.shader = colorShaderGf;
     }
