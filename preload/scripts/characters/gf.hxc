@@ -32,7 +32,7 @@ class GirlfriendCharacter extends SparrowCharacter
        var girl = PlayState.instance.currentStage.getGirlfriend();
 
        if (girl.characterId == father.characterId)
-           girl.shader = father.shader;
+           father.shader = girl.shader;
     }
   }
 
